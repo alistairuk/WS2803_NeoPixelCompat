@@ -11,17 +11,25 @@ Updates to this library are available at https://github.com/alistairuk .
 
 To convert your sketch from using NeoPixel just replace...
 
+```
 #include <Adafruit_NeoPixel.h>
+```
 
 ...with...
 
+```
 #include <WS2803_NeoPixelCompat.h>
 #include <SPI.h>
+```
 
 ...and replace...
 
+```
 Adafruit_NeoPixel strip = Adafruit_NeoPixel({LED_Count},{Data_Pin}, {Params});
+```
 
 ...with...
 
+```
 WS2803_NeoPixelCompat strip = WS2803_NeoPixelCompat({LED_Count},{Data_Pin},{Clock_Pin});
+```
